@@ -12,4 +12,9 @@ Define a function possibletriangle that takes 3 arguments (side1, side2, side3).
 '''
 
 def possibletriangle(side1, side2, side3): #do not change this line
-  pass #delete the word pass when you start writing your code
+  if side1 + side2 > side3 and side2 + side3 > side1 and side3 + side1 > side2:
+    return True
+  elif side1 + side2 < side3 or side2 + side3 < side1 or side3 + side1 < side2:
+    return False
+  else:
+    return False
